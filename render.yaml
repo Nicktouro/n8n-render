@@ -6,6 +6,8 @@ services:
     branch: main
     numInstances: 1
     healthCheckPath: /
+    image:
+      url: docker.io/n8nio/n8n:1.107.4
     envVars:
       - key: DB_TYPE
         value: sqlite
